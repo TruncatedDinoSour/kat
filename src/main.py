@@ -60,6 +60,7 @@ async def kat(room: Any, message: Any) -> None:
         "🐈‍⬛",
         "/bin/cat",
         "/usr/bin/cat",
+        "el gato",
     ):
         async with aiohttp.ClientSession() as session:
             async with session.get("https://cataas.com/cat") as response:
