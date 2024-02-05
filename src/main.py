@@ -69,12 +69,13 @@ async def kat(room: Any, message: Any) -> None:
         "mew",
         "nya",
         "1984",
+        "hiss",
     ):
         async with aiohttp.ClientSession() as session:
             async with session.get("https://cataas.com/cat") as response:
                 content: bytes = await response.content.read()
                 file: str = (
-                    f"cat-{hashlib.sha256(content).hexdigest()}.{mimetypes.guess_extension(response.headers['Content-Type'])}"
+                    f"{hashlib.sha256(content).hexdigest()}{mimetypes.guess_extension(response.headers['Content-Type'])}"
                 )
 
                 async with aiofiles.open(
