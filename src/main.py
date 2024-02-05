@@ -61,6 +61,14 @@ async def kat(room: Any, message: Any) -> None:
         "/bin/cat",
         "/usr/bin/cat",
         "el gato",
+        "meow",
+        "purr",
+        "mrrp",
+        "mreow",
+        "mrew",
+        "mew",
+        "nya",
+        "1984",
     ):
         async with aiohttp.ClientSession() as session:
             async with session.get("https://cataas.com/cat") as response:
