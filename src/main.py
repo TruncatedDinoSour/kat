@@ -34,7 +34,7 @@ bot: botlib.Bot = botlib.Bot(
 async def kat(room: Any, message: Any) -> None:
     """sets a random cat on a specific keyword or with a 5% chance"""
 
-    if random.random() < 0.05 or message.body.lower() in (
+    if random.random() < 0.01 or message.body.lower() in (
         "cat",
         "kat",
         "katze",
