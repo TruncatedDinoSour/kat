@@ -1,8 +1,6 @@
 # kat bot
 
-> matrix bot for cats by cats -- @kat:ari.lt
-
-public instance ran by me : <https://matrix.to/#/@kat:ari.lt>
+> matrix bot for cats by cats
 
 ## running
 
