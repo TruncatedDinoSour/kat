@@ -32,7 +32,7 @@ bot: botlib.Bot = botlib.Bot(
 
 @bot.listener.on_message_event  # type: ignore
 async def kat(room: Any, message: Any) -> None:
-    """sets a random cat on a specific keyword or with a 5% chance"""
+    """sets a random cat on a specific keyword or with a 1% chance"""
 
     if random.random() < 0.01 or message.body.lower() in (
         "cat",
